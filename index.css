@@ -35,6 +35,15 @@ button{
 	height: 50px;
 	/* 顏色 */
 	background-color: #4267b2;
+	display: flex;
+}
+
+.acl{
+	color: white;
+	position: absolute;
+	left: 47%;
+	top: 4px;
+	font-size: 32px;
 }
 
 .ft-blue{
@@ -60,6 +69,21 @@ button{
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-bottom: 10px;
+}
+
+.bg-yellow{
+	background-color: #ffff73;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.bg-purple{
+	background-color: #d2cffd;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	
 }
 
 .burger{
@@ -148,7 +172,7 @@ button{
 }
 
 .img{
-	width: 100%;
+	width: 97%;
 }
 
 
@@ -197,6 +221,20 @@ button{
 
 #answerOne, #answerTwo, #answerThree{
 	visibility: hidden;
+}
+
+.bottonRight{
+	background-color: black;
+	color: white;
+	text-align: center;
+	height: 27px;
+}
+
+.goToTop{
+	background-color: yellow;
+	position: fixed;
+	bottom: 35px;
+	right: 20px;
 }
 
 
