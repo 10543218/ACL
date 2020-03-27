@@ -41,8 +41,8 @@ button{
 .acl{
 	color: white;
 	position: absolute;
-	left: 47%;
-	top: 4px;
+	left: 60px;
+	top: 6px;
 	font-size: 32px;
 }
 
@@ -235,6 +235,7 @@ button{
 	position: fixed;
 	bottom: 35px;
 	right: 20px;
+	font-size: 48px;
 }
 
 
