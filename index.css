@@ -136,26 +136,26 @@ button{
 	/* visibility: visible; */
 }
 
-.bgMask{
+/* .bgMask{ */
 	/* 位置 */
-	position: absolute;
-	top: calc(var(--navHeight) * 1px);
-	left: calc(100% - var(--bgMaskRightWidth));
+	/* position: absolute; */
+	/* top: calc(var(--navHeight) * 1px); */
+	/* left: calc(100% - var(--bgMaskRightWidth)); */
 	/* 大小 */
-	height: calc(1250%);
-	width: calc(var(--bgMaskRightWidth));
+	/* height: calc(1250%); */
+	/* width: calc(var(--bgMaskRightWidth)); */
 	/* 顏色 */
-	background-color: black;
-	opacity: 0.7;
-}
+	/* background-color: black; */
+	/* opacity: 0.7; */
+/* } */
 
 .fixed-left{
 	/* 位置 */
 	position: absolute;
 	top: calc(var(--navHeight) * 1px);
 	/* 大小 */
-	width: calc(100% - (var(--bgMaskRightWidth)));
-	height: calc(1250%);
+	width: 50%;
+	height: 100px;
 	/* 顏色 */
 	background-color: white;
 	opacity: 1;
@@ -183,11 +183,11 @@ button{
 	/* 顏色 */
 	color: black;
 	/* 文字 */
-	font-size: 14px;
+	font-size: 18px;
 	/* 位置 */
 	position: relative;
 	top: 30%;
-	left: 5%;
+	left: 40%;
 }
 
 .LeftRectangleSameAttributes{
@@ -198,6 +198,9 @@ button{
 	background-color: #bfbfff;
 	/* 外觀 */
 	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
 }
 
 .LeftRectangleSameAttributes:hover{
@@ -216,6 +219,12 @@ button{
 	/* 位置 */
 	position: absolute;
 	top: calc((var(--menuItemsHeight)*1) * 1px);
+}
+
+.leftThreeRectangle{
+	/* 位置 */
+	position: absolute;
+	top: calc((var(--menuItemsHeight)*2) * 1px);
 }
 
 
@@ -248,10 +257,41 @@ button{
 	--lineWidth: 26;
 	--lineTop: 20;
 	/* 遮罩背景 */
-	--bgMaskRightWidth: 25%;
-	--menuItemsHeight: 200;
+	--menuItemsHeight: 50;
 	/* calc(var(--lineLeft) * 1px); */
 }
+
+
+
+
+
+/* index.html開始 */
+.clickToLearn{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* justify-content: space-around; */
+	justify-content: start;
+}
+
+.see0xxx{
+	width: 44%;
+	height: 96px;
+	margin-left: 4%;
+	margin-top: 20px;
+	border: 0px;
+	text-align: center;
+	font-size: 16px;
+	color: black;
+}
+
+@media(min-width: 400px){
+    .see0xxx{
+		width: 20%;
+	}
+}
+
+/* @media only screen and (max-device-width: 480px) */
 
 
 
