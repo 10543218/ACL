@@ -6,10 +6,7 @@ html, body {
 }
 
 body {
-	/* 顏色 */
-	/* background-color: #e9ebee; */
 	background-color: white;
-	/* background-color: black; */
 	font-size: 20px;
 }
 
@@ -83,21 +80,20 @@ button{
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-bottom: 10px;
-	
 }
 
 .burger{
 	/* 大小 */
-	width: calc(var(--burgerBgWidth) * 1px);
-	height: calc(var(--navHeight) * 1px);
+	width: 50px;
+	height: 50px;
 	/* 顏色 */
 	background-color: #4267b2;
 }
 
 .burgerLineOne, .burgerLineTwo, .burgerLineThree{
 	/* 大小 */
-	width: calc(var(--lineWidth) * 1px);
-	height: calc(var(--lineHeight) * 1px);	
+	width: 26px;
+	height: 2px;	
 	/* 顏色 */
 	background-color: white;
 	/* 外觀 */
@@ -107,21 +103,21 @@ button{
 .burgerLineOne{	
 	/* 位置 */
 	position: absolute;
-	left: calc(var(--lineLeft) * 1px);
-	top: calc(var(--lineTop) * 1px);
+	left: 12px;
+	top: 20px;
 }
 
 .burgerLineTwo{
 	/* 位置 */
 	position: absolute;
-	left: calc(var(--lineLeft) * 1px);
+	left: 12px;
 	top: 25px;
 }
 
 .burgerLineThree{
 	/* 位置 */
 	position: absolute;
-	left: calc(var(--lineLeft) * 1px);
+	left: 12px;
 	top: 30px;
 }
 
@@ -136,25 +132,12 @@ button{
 	/* visibility: visible; */
 }
 
-/* .bgMask{ */
-	/* 位置 */
-	/* position: absolute; */
-	/* top: calc(var(--navHeight) * 1px); */
-	/* left: calc(100% - var(--bgMaskRightWidth)); */
-	/* 大小 */
-	/* height: calc(1250%); */
-	/* width: calc(var(--bgMaskRightWidth)); */
-	/* 顏色 */
-	/* background-color: black; */
-	/* opacity: 0.7; */
-/* } */
-
 .fixed-left{
 	/* 位置 */
 	position: absolute;
-	top: calc(var(--navHeight) * 1px);
+	top: 50px;
 	/* 大小 */
-	width: 50%;
+	width: 99.75%;
 	height: 100px;
 	/* 顏色 */
 	background-color: white;
@@ -186,8 +169,7 @@ button{
 	font-size: 18px;
 	/* 位置 */
 	position: relative;
-	top: 30%;
-	left: 40%;
+	width: 40px;
 }
 
 .LeftRectangleSameAttributes{
@@ -201,6 +183,9 @@ button{
 	border-left: 1px solid black;
 	border-right: 1px solid black;
 	border-top: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .LeftRectangleSameAttributes:hover{
@@ -212,19 +197,32 @@ button{
 .leftOneRectangle{
 	/* 位置 */
 	position: absolute;
-	top: calc((var(--menuItemsHeight)*0) * 1px);
+	top: 0px;
 }
 
 .leftTwoRectangle{
 	/* 位置 */
 	position: absolute;
-	top: calc((var(--menuItemsHeight)*1) * 1px);
+	top: 50px;
 }
 
 .leftThreeRectangle{
 	/* 位置 */
 	position: absolute;
-	top: calc((var(--menuItemsHeight)*2) * 1px);
+	top: 100px;
+}
+
+:root{
+	/* 導航列 */
+	/* --burgerBgWidth: 50; */
+	/* --navHeight: 50; */
+	/* --lineHeight: 2; */
+	/* --lineLeft: 12; */
+	/* --lineWidth: 26; */
+	/* --lineTop: 20; */
+	/* 遮罩背景 */
+	/* --menuItemsHeight: 50; */
+	/* calc(var(--lineLeft) * 1px); */
 }
 
 
@@ -246,23 +244,6 @@ button{
 	right: 20px;
 	font-size: 48px;
 }
-
-
-:root{
-	/* 導航列 */
-	--burgerBgWidth: 50;
-	--navHeight: 50;
-	--lineHeight: 2;
-	--lineLeft: 12;
-	--lineWidth: 26;
-	--lineTop: 20;
-	/* 遮罩背景 */
-	--menuItemsHeight: 50;
-	/* calc(var(--lineLeft) * 1px); */
-}
-
-
-
 
 
 /* index.html開始 */
