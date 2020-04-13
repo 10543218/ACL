@@ -54,3 +54,19 @@ function to0324Page(){
 function to0331Page(){
 	window.location.href = "0331.html";
 }
+
+function to0407Page(){
+	window.location.href = "0407.html";
+}
+
+function to0414Page(){
+	window.location.href = "0414.html";
+}
+
+function to0421Page(){
+	window.location.href = "0421.html";
+}
+
+function to0428Page(){
+	window.location.href = "0428.html";
+}
