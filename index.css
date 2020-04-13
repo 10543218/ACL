@@ -212,6 +212,12 @@ button{
 	top: 100px;
 }
 
+.leftFourRectangle{
+	/* 位置 */
+	position: absolute;
+	top: 150px;
+}
+
 :root{
 	/* 導航列 */
 	/* --burgerBgWidth: 50; */
