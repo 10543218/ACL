@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+	<title>0407上課內容</title>
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<script src="index.js"></script>
+</head>
+<body>
+	<header>
+		<!-- 導覽列開始 -->
+        <div class="h-50" id="top">
+			<div class="burger" id="burger" onclick="ShowMenu()" >
+				<div class="burgerLineOne"></div>
+				<div class="burgerLineTwo"></div>
+				<div class="burgerLineThree"></div>
+			</div>
+			<!-- <div class="acl">ACL教學</div> -->
+		</div>
+		<!-- 導覽列結束 -->
+		
+		<!-- 標題 -->
+		<h2 class="divCenter">0407上課內容</h2>
+		
+		<!-- 內文開始 -->
+		<div class="content">
+			<div>
+				<div>在此你將會學到:</div>
+				<ul class="ft-blue">
+					<li><a class="ft-blue" href="#sect1">課中複習</a></li>
+					<li><a class="ft-blue" href="#sect2">文字資料分類技術</a></li>
+					<li><a class="ft-blue" href="#sect3">顯示欄位資料的小數點</a></li>
+					<li><a class="ft-blue" href="#sect4">檢查欄位資料的正確性</a></li>
+					<li><a class="ft-blue" href="#sect5">對日期資料做帳齡分析</a></li>
+					<li><a class="ft-blue" href="#sect6">額外的筆記</a></li>
+				</ul>
+				<div>溫馨小提醒:</div>
+				<div>點擊上方文字可直接到達相關內容</div>
+				<div>例: 點選"額外的筆記"</div>
+				<div>就會直接跳到"額外的筆記"</div>
+			</div>
+			
+			<p>
+			<hr>
+			<p>
+			
+			<div class="bg-blue">
+				<div class="section-Title" id="sect1">課中複習</div>
+				<p>
+				
+				<div>複習內容:</div>
+				<div>數值 分層(Stratify)</div>
+				<div>文字 分類(Classify)</div>
+				<div>日期 帳齡分析(Age)</div>
+				<div>以上內容都在第5章</div>
+				<p>
+				
+				<div>5-4 第四行</div>
+				<div>使用分層(Stratify)指令可以不用</div>
+				<div>事先排序資料表格的資料</div>
+				<p>
+				
+				<div>5-4最下面</div>
+				<div>這兩個階段很重要:</div>
+				<div>階段1: 剖析資料</div>
+				<div>階段2: 資料分層</div>
+				<div>剖析資料的目的是:</div>
+				<div>找最大、最小值</div>
+				<div>(老師說她一定考!!!)</div>
+			</div>
+			
+			<p>
+			<hr>
+			<p>
+			
+			<div class="bg-purple">
+				<div class="section-Title" id="sect2">文字資料分類技術</div>
+				<p>
+				
+				<div>課本5-10 第一行</div>
+				<div>Classify指令對於未排序的資料</div>
+				<div>要快速瀏覽和彙總紀錄時特別有用</div>
+				<p>
+				
+				<div>彙總分類的預設是50000個分類</div>
+				<p>
+				
+				<div>我們來學習分類吧!</div>
+				<div>你可以參考課本 5-9 ~ 5-10</div>
+				<p>
+				<div>首先請開啟檔案</div>
+				<div>D:\ACL108-2\Workbook Data Files\Workbook.acl</div>
+				<div>按開啟舊檔</div>
+				<p>
+				
+				<div>打開table資料夾(按table左邊的+號)</div>
+				<div>左鍵點擊兩下Ap_Trans資料表</div>
+				<div>看到左上方，依序進入:</div>
+				<div>Analyze > Classify</div>
+				<div>到Classify On...的下面</div>
+				<div>擊下拉式選單</div>
+				<div>選擇Vendor_No</div>
+				<p>
+				
+				<div>接下來看看右邊</div>
+				<div>看到Subtotal Fields...按鈕的下方</div>
+				<div>請使用ctrl鍵依序點擊</div>
+				<div>1. Invoice</div>
+				<div>2. Quantity</div>
+				<div>3. Unit_Cost</div>
+				<div>按確定</div>
+				<p>
+				
+				<div>接下來請切換到Output</div>
+				<div>這步驟是要輸出檔案</div>
+				<div>點選file</div>
+				<div>檔名設為: classify</div>
+				<div>如果怕檔案位置不對</div>
+				<div>可以點擊左邊的Name</div>
+				<div>就可擺放在你想要的位置</div>
+				<div>最後按確定</div>
+				<p>
+				
+				<div>請切換到 classify 資料表</div>
+				<div>這邊開始複習如何導出新欄位</div>
+				<p>
+				
+				<div>看到畫面左上方</div>
+				<div>點擊Edit > Table Layout</div>
+				<div>點底3個圖示</div>
+				<div>(Add a New Expression)</div>
+				<div>Name請填入average</div>
+				<div>接著點擊 f(x)</div>
+				<div>用輸入 或是 點選</div>
+				<div>Invoice_Amount  /  COUNT</div>
+				<div>讓Expression出現上面這行</div>
+				<div>點擊Ok</div>
+				<div>點擊綠色勾勾</div>
+				<div>按右上角紅色叉叉</div>
+				<p>
+				
+				<div>此時沒有欄位顯示出來是正常的</div>
+				<div>請在表格空白處</div>
+				<div>按滑鼠右鍵 > Add Columns</div>
+				<div>點擊average</div>
+				<div>點擊 --> </div>
+				<div>讓average在右邊出現</div>
+				<div>點擊ok</div>
+				<div>此時你會發現表格中多了個欄位</div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			
+			<p>
+			<hr>
+			<p>
+			
+			<div class="bg-blue">
+				<div class="section-Title" id="sect3">顯示欄位資料的小數點</div>
+				<p>
+				
+				<div>看到畫面左上方</div>
+				<div>點擊Edit > Table Layout</div>
+				<div>右鍵點擊你想做變更的欄位</div>
+				<div>點Edit</div>
+				<div>接著會出現一個畫面</div>
+				<div>我想大家應該都很熟悉它吧!?</div>
+				<div>把Dec.的格子改成你要的小數位數</div>
+				<div>按綠色勾勾</div>
+				<div>點擊右上角紅色叉叉</div>
+				<div>這邊恭喜你成功了!!!</div>
+				<div>(你可以用 Unit Cost 嘗試看看)</div>
+			</div>
+			
+			<p>
+			<hr>
+			<p>
+			
+			<div class="bg-purple">
+				<div class="section-Title" id="sect4">檢查欄位資料的正確性</div>
+				<p>
+				
+				<div>這邊你會學到:</div>
+				<div>如何為資料做合理解釋</div>
+				<p>
+				<div>我們一樣使用 classify 資料表</div>
+				<div>請檢查:</div>
+				<div>單位成本*數量Quantity</div>
+				<div>是否等於發票金額?</div>
+				<p>
+				
+				
+				<div>題目1:如何判斷?</div>
+				<p>
+				
+				<button onclick="showAnsOne()">按我查看解答</button>
+				<div id="answerOne">
+					<div>使用漏斗功能，輸入或點擊:</div>
+					<div>Unit_Cost * Quantity = Invoice_Amount</div>
+					<div>按Ok</div>
+					<div>你會發現這邊只出現11筆資料</div>
+					<div>這代表並不是所有資料都是</div>
+					<div>P * Q = 發票金額 !!!</div>
+				</div>
+				<p>
+				
+				<div>題目2:為何只有11筆?</div>
+				<p>
+				
+				<button onclick="showAnsTwo()">按我查看解答</button>
+				<div id="answerTwo">
+					<div>請使用漏斗功能，輸入或點擊:</div>
+					<div>Unit_Cost * Quantity <> Invoice_Amount</div>
+					<div>按Ok</div>
+					<div>這邊會出現剩下的26筆資料</div>
+					<div>我用第一筆來做講解好了</div>
+					<p>
+					
+					<div>請看到攤販編號10025</div>
+					<div>它的單位成本46.51</div>
+					<div>是由5筆資料所加總而來的</div>
+					<div>數量3917也是一樣的道理</div>
+					<div>你直接這樣子做相乘</div>
+					<div>當然不會等於發票金額囉!</div>
+				</div>
+				<p>
+			</div>
+
+			<p>
+			<hr>
+			<p>
+			
+			<div class="bg-blue">
+				<div class="section-Title" id="sect5">對日期資料做帳齡分析</div>
+				<p>
+				
+				<div>這邊我還沒新增內容而已</div>
+				<div>小弟我有點忙 0.0</div>
+			</div>
+			
+			<p>
+			<hr>
+			<p>
+			
+			<div class="bg-purple">
+				<div class="section-Title" id="sect6">額外筆記</div>
+				<p>
+				
+				<div>這次沒有額外筆記 O.O</div>
+				<div>筆記到此結束</div>
+			</div>
+			<p>
+		</div>
+		
+		<a class="goToTop" href="#top">↑</a>
+		
+		<div class="bottonRight">
+			請勿複製網頁整體內容 謝謝
+		</div>
+		<!-- 左側固定開始 -->
+		<div class="navBelow" id="navBelow">
+			<div class="fixed-left">
+				<div class="leftOneRectangle LeftRectangleSameAttributes" onclick="toIndexPage()">
+					<div class="MenuFontSameAttributes">
+						首頁		
+					</div>
+				</div>
+				<div class="leftTwoRectangle LeftRectangleSameAttributes" onclick="to0324Page()">
+					<div class="MenuFontSameAttributes">
+						0324				
+					</div>
+				</div>
+				<div class="leftThreeRectangle LeftRectangleSameAttributes" onclick="to0331Page()">
+					<div class="MenuFontSameAttributes">
+						0331				
+					</div>
+				</div>
+				<div class="leftFourRectangle LeftRectangleSameAttributes" onclick="to0407Page()">
+					<div class="MenuFontSameAttributes">
+						0407				
+					</div>
+				</div>
+			</div>
+		</div>	
+		<!-- 左側固定結束 -->
+    </header>
+
+</body>
+</html>
+
+
